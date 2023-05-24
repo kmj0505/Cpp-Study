@@ -16,30 +16,16 @@ int main(void)
 {
 	int N;
 	cin >> N;
-	int answer = 0;
-	for (int i = 1; i <= N; i++)
+	cout << 1;
+	int answer = 1;
+	for (int i = 2; i < N; i++)
 	{
 		if (N % i == 0)
 		{
-			if (i < N)
-			{
-				cout << i;
-				if (i < N / 2)
-				{
-					cout << "+";
-				}
-				else if (i == N)
-				{
-					break;
-				}
-				answer += i;
-			}
-			else
-			{
-				cout << "=" << answer << endl;
-				break;
-			}
-		}	
+			cout << "+" << i;
+			answer += i;
+		}
 	}
+	cout << "=" << answer << endl;
 	return 0;
 }
