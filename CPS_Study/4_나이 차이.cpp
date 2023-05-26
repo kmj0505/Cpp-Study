@@ -9,7 +9,7 @@
 
 
 
-#include <string.h>
+#include <string>
 #include <iostream>
 #include <vector>
 
