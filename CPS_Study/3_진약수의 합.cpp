@@ -7,7 +7,7 @@
 //Ãâ·Â : 1+2+4+5+10=22 
 
 
-#include <string.h>
+#include <string>
 #include <iostream>
 
 using namespace std;
