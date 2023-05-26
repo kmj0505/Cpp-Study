@@ -16,8 +16,8 @@ int main(void)
 {
 	int N;
 	cin >> N;
-	cout << 1;
-	int answer = 1;
+	int answer = N / N;
+	cout << answer;
 	for (int i = 2; i < N; i++)
 	{
 		if (N % i == 0)
