@@ -19,7 +19,7 @@ int main(void)
 {
 	int size, min, max, agediff;
 	cin >> size;
-	vector<int> age(size, 0);
+	vector<int> age(size);
 	
 	for (int i = 0; i < size; i++)
 	{
