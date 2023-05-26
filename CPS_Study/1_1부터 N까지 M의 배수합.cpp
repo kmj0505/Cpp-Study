@@ -7,7 +7,7 @@
 //Ãâ·Â : 45
 
 
-#include <string.h>
+#include <string>
 #include <iostream>
 
 using namespace std;
