@@ -21,13 +21,18 @@ int main(void)
 	int cnt = 0;
 	cin >> N;
 
-	for (int i = 1; i <= N; i++)
+	if (3 <= N && N < 100000)
 	{
-		string str_num = to_string(i);
-		cnt += str_num.length();
+		for (int i = 1; i <= N; i++)
+		{
+			string str_num = to_string(i);
+			cnt += str_num.length();
+		}
+		cout << cnt << endl;
 	}
-
-	cout << cnt << endl;
-
+	else
+	{
+		cout << "숫자가 잘못 입력되었습니다." << endl;
+	}
 	return 0;
 }
