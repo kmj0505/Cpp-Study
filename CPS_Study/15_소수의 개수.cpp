@@ -10,38 +10,37 @@
 
 
 #include <iostream>
-#include <cmath>
+#include <string>
+#include <algorithm>
+
 using namespace std;
 
-bool isPrime(int x) {
-    if (x < 2) {
-        return false;
-    }
-    int sqrtX = sqrt(x);
-    for (int i = 2; i <= sqrtX; i++) {
-        if (x % i == 0) {
+bool isPrime(int x)
+{
+    for (int i = 2; i < x; i++)
+    {
+        if (x % i == 0)
+        {
             return false;
         }
     }
     return true;
 }
 
-int countPrimes(int N) {
-    int count = 0;
-    for (int i = 2; i <= N; i++) {
-        if (isPrime(i)) {
-            count++;
-        }
-    }
-    return count;
-}
-
 int main() {
     int N;
+    int cnt = 0;
+
     cin >> N;
 
-    int numPrimes = countPrimes(N);
-    cout << numPrimes << endl;
+    for (int i = 2; i < N; i++)
+    {
+        if (isPrime(i) == true)
+        {
+            cnt++;
+        }
+    }
+    cout << cnt;
 
     return 0;
 }
