@@ -65,16 +65,13 @@ int main(void)
 			Winner.push_back("D");
             sum_A += 1;
             sum_B += 1;
-<<<<<<< HEAD
         }
     }
     cout << sum_A << " " << sum_B << endl;
-=======
 		}
 	}
 
 	cout << sum_A << " " << sum_B << endl;
->>>>>>> 43eb934b21bdc0a9b0ddcabb75f9b0ad986d8db4
 
     if(sum_A > sum_B){
         cout << "A" << endl;
