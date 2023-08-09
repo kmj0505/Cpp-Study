@@ -78,7 +78,6 @@ int main(void)
             sum_B += 1;
         }
     }
-
     cout << sum_A << " " << sum_B << endl;
 
     if (sum_A > sum_B)
